@@ -1,0 +1,54 @@
+\chapter{Work Done}
+
+\section{malicious information detection using NSL-KDD dataset\cite{NSL-KDD}}
+
+\subsection{SVM Algorithm}
+SVM is  supervised machine learning algorithm used to classify our dataset. Using SVM algorithm, We have designed IDS system from scratch ,because SVM treats every feature of data equally. We have used Python3.x and several machine learning libraries mainly numpy , pandas , scikit-learn to made that system.SVM has a feature to ignore outliers and find the hyper-plane that has maximum margin. Hence, we can say, SVM is robust to outliers.
+\subsubsection{Algorithm}
+In this algorithm, we plot each data item(information of the data which is being sent through the internet) as a point in n-dimensional space (where n is number of features you have) with the value of each feature being the value of a particular coordinate. Then, we perform classification by finding the hyper-plane that differentiate the two classes very well.IDS uses a linear classification algorithm. we are going to perform here linear SVM.
+here we are using kernel as ;linear .kernel in SVM is very crucial part to find the best hyper plane.
+\subsubsection{Hyper Planes}
+In order to get good prediction we need to select best hyper-plane.Select the hyper-plane which segregates the two classes better ,of data points in the n-dimensional space.
+Here,we will calculate the distance between nearest data point (either class) and hyper-plane . maximizing the distances will help us to decide the right hyper-plane. This distance is called as Margin.
+\end{itemize}
+\subsubsection{Analysis}
+The algorithm takes $O(d)$ time to predict where d the number of input dimensions.
+
+Accuracy of the model :     {0.9991012582384662}
+
+Accuracy of the testing data :     {1.0}
+
+\subsection{Blockchain Technique apply}
+Blockchain technology is used to generate the different block to contain the information of data safely with unique hash key associated with it.
+\subsubsection{Algorithm}
+Blockchain Technology will check whether hash key of the any pre-existing data has changed or not. if any block has different hash key before transaction and after transaction then attack has happened.
+we will use different hashing libraries such as hashlib (sha3_256) to generate the hash key for each block . pickle to store/dump the hash key. and datetime for timestamp.
+\end{itemize}
+\subsubsection{Analysis}
+initial block in the chain
+time-stamp :  {2019-05-06 20:26:14.026554}
+previous hash: 
+current hash:  {42c0c2cc8ea3f0dc4b5172c32eedf744e00c6bd11fe1c1d377760cacdec0f535}
+
+second block in the chain...
+time-stamp :  {2019-05-06 20:26:14.027777}
+previous hash:  {42c0c2cc8ea3f0dc4b5172c32eedf744e00c6bd11fe1c1d377760cacdec0f535}
+current hash:  {c2770872ff42e22715afc858a5b2b1a4e1c8d1dc84655172f4e65bc59ec9b63d}
+
+Third block in the chain...
+time-stamp :  {2019-05-06 20:26:14.028630}
+previous hash:  {c2770872ff42e22715afc858a5b2b1a4e1c8d1dc84655172f4e65bc59ec9b63d}
+current hash:  {07b866d023683b88b4e09f7c52ae8c004afddc55f80add889e4d7e013a10728a}
+
+NORMAL data.....
+time-stamp :   {2019-05-06 20:26:18.034454}
+previous hash :   {42c0c2cc8ea3f0dc4b5172c32eedf744e00c6bd11fe1c1d377760cacdec0f535}
+current hash :   {c2770872ff42e22715afc858a5b2b1a4e1c8d1dc84655172f4e65bc59ec9b63d}
+True
+
+Dos_Attack...........
+time-stamp :   {2019-05-06 20:26:22.048547}
+previous hash :   {42c0c2cc8ea3f0dc4b5172c32eedf744e00c6bd11fe1c1d377760cacdec0f535}
+current hash :   {0fca2eb0031eabefa14f21c9123ec924d521e014458c086891c7711a03dca7a8}
+False
+

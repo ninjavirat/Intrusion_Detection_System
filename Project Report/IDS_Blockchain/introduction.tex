@@ -1,0 +1,26 @@
+﻿\chapter{Introduction}
+Intrusion detection is the process of monitoring the events occurring in a computer system or network and analyzing them for signs of possible incidents, which are violations or imminent threats of violation of computer security policies, acceptable use policies, or standard security practices. Intrusion prevention is the process of performing intrusion detection and attempting to stop detected possible incidents.In order to protect data or database which is stored either in server or host , Blockchain technology is very useful . Blockchain generate is a public ledger .it creates blocks to contain the data or any information to keep secret by applying a unique hash key to each data or block in the chain.
+\subsection{Challanges}
+\begin{itemize}
+  \item Ids technique
+  \item Blockchain
+  \item Machine learning algorithm(SVM)
+  \item Implementation in python
+  \item Classification
+  \item Anomaly-Detection
+\end{itemize}
+\subsection{Literature Survey}
+The research conducted so far for intrusion detection system are discussed in this section.
+
+\subsubsection{Ids}
+Intrusion detection monitor the network (System) and detect illegal activity or any harmful information.IDS can be generally classified into HIDS and NIDS. on the basis of detecting the attck IDS is has two types one is signature based another is anomaly based detection.\cite{Ids}
+\subsubsubsection{HIDS-NIDS}
+A host-based intrusion detection system (HIDS) is a system that monitors a computer system on which it is installed to detect an intrusion, and responds by logging the activity and notifying the designated authority.A Network Intrusion Detection System (NIDS) is one common type of IDS that analyzes network traffic at all layers of the Open Systems Interconnection (OSI) model and makes decisions about the purpose of the traffic, analyzing for suspicious activity.
+\subsubsubsection{Signature-anomaly}
+The signature-based detection  identifies an attack by comparing its stored signatures against observed system or network events for potential incidents. A signature (or rule) is a kind of pattern describing a known attack or exploit. 
+\subsubsection{Algorithms used to detect the pattern}
+SVM is a supervised machine learning algorithm used to classify our message , because SVMtreats every feature of data equally In this algorithm we plot each dataitem as a point in n-dimensional space(where n is no.of input data) .then performing classification finding the hyperplane.\cite{Svm}
+\subsubsection{Blockchain Technology}
+Blockchain is digital ,decentralized ledger where we can store our data .blockchain is a Datastructure where each block os linked to another block in a time-stamped Chronological order. Blockchain is managed by the peer to peer network . By design, a blockchain is resistant to modification of the data.it means once data is  information is recorded then data is any block can’t be altered .blockchain is highlyFault tolerant as there is no single point  of failure.The data can not be modified . there we use hashing algorithm to create a unquie id For a particular block of data  information . if data is modified then hash key will be Changed .\cite{Blockchain}
+\subsubsection{Blockchain implementation}
+Blockchain is used to generate the hash key in order to find each transaction uniquely . we use python inbuilt library to generate the hash key .
